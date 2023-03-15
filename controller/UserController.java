@@ -45,7 +45,7 @@ public class UserController {
         if (userOptional.isPresent()) {
             User user = userOptional.get();
 
-            // Check if the password matches the hashed password in the database
+           
             if (userDto.getPassword().equals(user.getPassword())) {
                 return ResponseEntity.status(HttpStatus.OK).body("Login successful");
             }
