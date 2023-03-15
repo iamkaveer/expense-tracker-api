@@ -22,19 +22,17 @@
 ## Data Model
 Expense
 
-Field	          Type	           Description
-| id	       |     integer	   |   The unique ID of the expense
-___________________________________________________________________
+id ->    integer	   ->  The unique ID of the expense
+
 title	          string	      The title of the expense
-____________________________________________________________________
+
 description    	string	      The description of the expense
-____________________________________________________________________
+
 price	          int	        The price of the expense
-____________________________________________________________________
+
 date	          date	        The date of the expense
-____________________________________________________________________
+
 userEmail     	string	      The email of the user who created the expense
-_____________________________________________________________________________
 
 
 ## Project Summary:
