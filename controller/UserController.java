@@ -19,12 +19,6 @@ import jakarta.validation.Valid;
 public class UserController {
 	@Autowired
 	UserRepository userRepository;
-    //private final BCryptPasswordEncoder bCryptPasswordEncoder;
-	//BCryptPasswordEncoder bCryptPasswordEncoder
-//    public UserController(UserRepository userRepository) {
-//        this.userRepository = userRepository;
-//        //this.bCryptPasswordEncoder = bCryptPasswordEncoder;
-//    }
 
     @PostMapping("/register")
     public ResponseEntity<String> registerUser(@Valid @RequestBody UserDto userDto) {
@@ -33,8 +27,7 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.CONFLICT).body("Email already exists");
         }
 
-        // Hash the password
-        //String hashedPassword = bCryptPasswordEncoder.encode(userDto.getPassword());
+  
 
         // Save the user to the database
         User user = new User();
