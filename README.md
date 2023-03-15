@@ -24,15 +24,15 @@ Expense
 
 id ->    integer	   ->  The unique ID of the expense
 
-title	          string	      The title of the expense
+title	     ->       string	   ->     The title of the expense
 
-description    	string	      The description of the expense
+description    ->  	string	    ->    The description of the expense
 
-price	          int	        The price of the expense
+price	    ->        int	      ->    The price of the expense
 
-date	          date	        The date of the expense
+date	     ->       date	   ->       The date of the expense
 
-userEmail     	string	      The email of the user who created the expense
+userEmail    ->   	string	   ->     The email of the user who created the expense
 
 
 ## Project Summary:
